@@ -9,9 +9,9 @@ Kalian bisa berkontribusi dengan menerjemahkan halaman di situs ini ke Bahasa In
 ## Alur Untuk Berkontribusi
 
 1. Fork repositori ini.
-2. Buat issue di repositori ini, jelaskan berkas mana yang ingin kalian terjemahkan. Issue ini akan membantu teman-teman lain yang ingin berkontribusi tahu bawha berkas tersebut sedang kalian kerjakan, sehingga tidak terjadi penerjemahan di berkas yang sama di waktu yang sama.
-3. Satu issue hanya untuk satu berkas, dan satu pull request hanya untuk satu berkas. Pull request kalian akan ditolak jika menerjemahkan lebih dari satu berkas dalam satu pull request. Aturan ini untuk memudahkan perawat repositori dalam memeriksa pull request.
-4. Jika issue kalian tidak ada kejelasan dalam waktu 3 hari, maka issue anda akan dihapus sehingga orang lain bisa mengambil alih penerjemahan yang hendak kalian lakukan.
+2. Buat isu di repositori ini, jelaskan berkas mana yang ingin kalian terjemahkan. Isu ini akan membantu teman-teman lain yang ingin berkontribusi tahu bawha berkas tersebut sedang kalian kerjakan, sehingga tidak terjadi penerjemahan di berkas yang sama di waktu yang sama. Format nama isu yang disarankan adalah: `Translate <nama-halaman>`.
+3. Satu isu hanya untuk satu berkas, dan satu pull request hanya untuk satu berkas. Pull request kalian akan ditolak jika menerjemahkan lebih dari satu berkas dalam satu pull request. Aturan ini untuk memudahkan perawat repositori dalam memeriksa pull request.
+4. Jika isu kalian tidak ada kejelasan dalam waktu 3 hari, maka isu anda akan dihapus sehingga orang lain bisa mengambil alih penerjemahan yang hendak kalian lakukan.
 5. Setelah selesai menerjemahkan, kirimkan pull request kalian.
 6. Perawat repositori ini akan melakukan review kurang lebih dalam waktu 1 - 5 hari.
 

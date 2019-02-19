@@ -3,6 +3,60 @@
 Situs ini dibuat menggunakan [hexo](http://hexo.io/). Isi situs ini ditulis dalam format Markdown dan ada di direktori `src`. 
 _Pull Request_ sangat diterima!
 
+## Proses Penerjemahan
+
+Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini dari proses penerjemahan:
+
+- [x] Halaman Awal / Homepage
+- [x] Pemasangan / Installation
+- [x] Pengenalan / Introduction
+- [ ] Instan Vue / The Vue Instance
+- [ ] Sintaks Templat / Template Syntax
+- [ ] Properti Terkomputasi dan _Watchers_ / Computed Properties and Watchers
+- [ ] Kelas dan _Style Bindings_ / Class and Style Bindings
+- [ ] Rendering Kondisional / Conditional Rendering
+- [ ] Rendering Daftar / List Rendering
+- [ ] Penanganan _Event_ / Event Handling
+- [ ] _Binding_ Masukan Formulir / Form Input Bindings
+- [ ] Dasar-dasar Komponen / Component Basics
+
+- [ ] Pendaftaran Komponen / Component Registration
+- [ ] Props / Props
+- [ ] Event Kustom / Custom Event
+- [ ] Slot / Slots
+- [ ] Komponen Dinamis dan Asinkronus/ Dynamic & Async Components 
+- [ ] Penanganan Kasus-kasus Tertentu / Handling Edge Cases
+
+- [ ] Transisi Masuk dan Keluar / Enter and Leave Transitions
+- [ ] Transisi State / State's Transitions
+
+- [ ] Mixins / Mixins 
+- [ ] Direktif Kustom / Custom Directives
+- [ ] Fungsi Render & JSX / Render Functions and JSX
+
+- [ ] Plugins / Plugins
+- [ ] Filter / Filters
+- [ ] Komponen Satu Berkas (KSB) / Single File Components (SFC)
+- [ ] Unit Testing / Unit Testing
+- [ ] Dukungan TypeScript / TypeScript Support
+- [ ] Peluncuran Produksi / Production Deployment
+
+- [ ] Routing / Routing
+- [ ] Manajemen State / State Management
+- [ ] Rendering di Sisi Server / Server Side Rendering
+- [ ] Lebih Dalam Tentang Reaktifitas / Reactivity in Depth
+
+- [ ] Migrasi dari Vue 1.x / Migrating from Vue 1.x
+- [ ] Migrasi dari Vue Router 0.7.x / Migrating from Vue Router 0.7.x
+- [ ] Migrasi dari Vuex 0.6.x ke 1.0 / Migrating from Vux 0.6.x to 1.0
+- [ ] Perbandingan dengan Framework Lainnya / Comparison with Other Frameworks
+- [ ] Gabung dengan Komunitasi Vue.js / Join the Vue.js Community!
+- [ ] Berkenalan dengan Tim / Meet the Team
+
+Jika kalian ingin berkontribusi, pilih dari salah satu halaman di atas dan buat isu GitHub dengan format:
+
+Nama Isu: Translate <nama-halaman>
+
 ## Mengembangkan
 
 ``` bash

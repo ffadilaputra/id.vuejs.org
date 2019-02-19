@@ -10,7 +10,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [x] Halaman Awal / Homepage
 - [x] Pemasangan / Installation
 - [x] Pengenalan / Introduction
-- [ ] Instan Vue / The Vue Instance
+- [x] Instan Vue / The Vue Instance
 - [ ] Sintaks Templat / Template Syntax
 - [ ] Properti Terkomputasi dan _Watchers_ / Computed Properties and Watchers
 - [ ] Kelas dan _Style Bindings_ / Class and Style Bindings

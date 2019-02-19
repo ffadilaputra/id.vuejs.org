@@ -57,6 +57,8 @@ Jika kalian ingin berkontribusi, pilih dari salah satu halaman di atas dan buat 
 
 Nama Isu: Translate <nama-halaman>
 
+Untuk detail berkontribusi, silahkan lihat [CONTRIBUTING.md](CONTRIBUTING.md)
+
 ## Mengembangkan
 
 ``` bash

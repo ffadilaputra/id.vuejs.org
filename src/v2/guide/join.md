@@ -1,66 +1,68 @@
 ---
-title: Join the Vue.js Community!
+title: Gabung dengan Komunitasi Vue.js
 type: guide
 order: 802
 ---
 
-Vue's community is growing incredibly fast and if you're reading this, there's a good chance you're ready to join it. So... welcome!
+Komunitas Vue berkembang sangat cepat, kalian akan diterima dengan lapang jika kalian tertarik!
 
-Now we'll answer both what the community can do for you and what you can do for the community.
+Akan kami jelaskan apa yang bisa komunitas berikan kepada kalian, dan apa yang bisa kalian berikan untuk komunitas
 
-## Resources
+## Sumber Daya
 
 ### Code of Conduct
 
-Our [Code of Conduct](/coc) is a guide to make it easier to enrich all of us and the technical communities in which we participate.
+Bacalah terlebih dahulu [_Code of Conduct_](/coc) yang sudah kami tulis. Panduan ini akan menjelaskan bagaimana cara berhubungan yang baik di komunitas Vue.
 
-### Get Support
+### Dukungan Yang Tersedia
 
-- [Forum](https://forum.vuejs.org/): The best place to ask questions and get answers about Vue and its ecosystem.
-- [Chat](https://chat.vuejs.org/): A place for Vue devs to meet and chat in real time.
-- [Meetups](https://www.vuemeetups.org): Want to find local Vue.js enthusiasts like yourself? Interested in becoming a community leader? We have the help and support you need right here!
-- [GitHub](https://github.com/vuejs): If you have a bug to report or feature to request, that's what the GitHub issues are for. We also welcome pull requests!
+Dukungan-dukungan di bawah ini tersedia dalam Bahasa Inggris.
 
-### Explore the Ecosystem
+- [Forum](https://forum.vuejs.org/): Tempat untuk tanya jawab seputar Vue.
+- [Chat](https://chat.vuejs.org/): Tempat pengembang dan pengguna Vue saling berkumpul.
+- [Meetups](https://www.vuemeetups.org): Temukan komunitas lokal Vue di sekitar kalian. Jika kalian tertarik menjadi pemimpin suatu komunitas, kami siap membantu dan memberikan dukungan.
+- [GitHub](https://github.com/vuejs): Jika kalian ingin melaporkan _bug_ atau ingin memberikan saran, kalian bisa melakukannya di repositori resmi Vue ini. Kalian juga boleh berkontribusi.
 
-- [The Awesome Vue Page](https://github.com/vuejs/awesome-vue): See what other awesome resources have been published by other awesome people.
-- [The "Show and Tell" Subforum](https://forum.vuejs.org/c/show-and-tell): Another great place to check out what others have built with and for the growing Vue ecosystem.
+### Jelajahi Ekosistem Vue
 
-## What You Can Do
+- [Halaman Awesome Vue](https://github.com/vuejs/awesome-vue): Sekumpulan sumber daya keren yang berhubungan dengan Vue yang bisa kalian gunakan di proyek-proyek kalian.
+- [Subforum "Show and Tell"](https://forum.vuejs.org/c/show-and-tell): Tempat untuk melihat hasil karya orang lain menggunakan Vue, kalian juga bisa membagikan hasil karya kalian di sini.
 
-### Contribute Code
+## Apa Yang Bisa Kalian Lakukan?
 
-As with any project, there are rules to contributing. To ensure that we can help you or accept your pull request as quickly as possible, please read [the contributing guide](https://github.com/vuejs/vue/blob/dev/.github/CONTRIBUTING.md).
+### Berkontribusi ke Vue
 
-After that, you'll be ready to contribute to Vue's core repositories:
+Setiap proyek, memiliki aturan yang harus diikuti sebelum kalian mulai berkontribusi. Untuk memastikan kami bisa membantu dan memproses _pull request_ kalian secepat mungkin, silahkan baca [panduan berkontribusi](https://github.com/vuejs/vue/blob/dev/.github/CONTRIBUTING.md).
 
-- [vue](https://github.com/vuejs/vue): the core library
-- [vuex](https://github.com/vuejs/vuex): Flux-inspired state management
-- [vue-router](https://github.com/vuejs/vue-router): a routing system for SPAs
+Setelah kalian paham dengan aturan yang ada, kalian bisa berkontribusi ke repositori utama Vue:
 
-...as well as many smaller official [companion libraries](https://github.com/vuejs).
+- [vue](https://github.com/vuejs/vue): Inti dari Vue.
+- [vuex](https://github.com/vuejs/vuex): _State management_ yang terinspirasi dari _Flux_.
+- [vue-router](https://github.com/vuejs/vue-router): Sistem _routing_ untuk Aplikasi Satu Halaman / _Single Page Application_ / SPA.
 
-### Share (and Build) Your Experience
+...juga ada beberapa [library pendamping](https://github.com/vuejs).
 
-Apart from answering questions and sharing resources in the forum and chat, there are a few other less obvious ways to share and expand what you know:
+### Bagikan Pengalaman Kalian
 
-- **Develop learning materials.** It's often said that the best way to learn is to teach. If there's something interesting you're doing with Vue, strengthen your expertise by writing a blog post, developing a workshop, or even publishing a gist that you share on social media.
-- **Watch a repo you care about.** This will send you notifications whenever there's activity in that repository, giving you insider knowledge about ongoing discussions and upcoming features. It's a fantastic way to build expertise so that you're eventually able to help address issues and pull requests.
+Selain menjawab pertanyaan dan berbagi sumber daya di forum dan chat, ada beberapa cara lain untuk berbagi dan belajar dengan komunitas:
 
-### Translate Docs
+- **Buat bahan pembelajaran.** Cara terbaik untuk belajar adalah dengan mengajar. Jika kalian tertarik untuk belajar tentang Vue. Bagikan juga pembelajaran kalian melalui tulisan di blog, membuat _workshop_, atau bagikan sebagian kecil kode kalian ke media sosial.
+- **Pantau repositori yang menarik perhatian kalian.** Dengan ini kalian akan mendapatkan pemberitahuan ketika ada aktifitas di repositori tersebut. Sehingga kalian bisa tahu keadaan yang sedang terjadi di repositori tersebut. Suatu saat, mungkin kalian tertarik untuk membantu menyelesaikan sebuah isu dan berkontribusi.
 
-Vue has already spread across the globe, with even the core team in at least half a dozen timezones. [The forum](https://forum.vuejs.org/) includes 7 languages and counting and many of our docs have [actively-maintained translations](https://github.com/vuejs?utf8=%E2%9C%93&query=vuejs.org). We're very proud of Vue's international reach, but we can do even better.
+### Terjemahkan Dokumentasi
 
-I hope that right now, you're reading this sentence in your preferred language. If not, would you like to help us get there?
+Vue tersebar di seluruh dunia, dengan beberapa anggota tim utama tersebar ke 6 zona waktu yang berbeda. [Forum](https://forum.vuejs.org/) Vue terdirir dari 7 bahasa, dan beberapa dokumentasi kami memiliki [terjemahan yang dirawat secara berkala](https://github.com/vuejs?utf8=%E2%9C%93&query=vuejs.org). Kami sangat bangga dengan tersebarnya Vue secara internasional.
 
-If so, please feel free to fork the repo for [these docs](https://github.com/vuejs/vuejs.org/) or for any other officially maintained documentation, then start translating. Once you've made some progress, open an issue or pull request in the main repo and we'll put out a call for more contributors to help you out.
+Kami berharap saat ini kalian membaca dokumentasi ini dalam bahasa kalian sendiri. Jika tidak, maukah kalian membantu kami menerjemahkan dokumentasi ini ke bahasa kalian?
 
-### Become a Community Leader
+Jika iya, silahkan _fork_ repo untuk [dokumentasi resmi](https://github.com/vuejs/vuejs.org/), dan lakukan proses penerjemahan. Ketika kalian sudah menerjemahkan beberapa halaman, buatlah isu atau pull request di repositori utama dan kami akan mempromosikan terjemahan kalian, sehingga bisa menarik minat orang-orang yang ingin membantu kalian.
 
-There's a lot you can do to help Vue grow in your community:
+### Menjadi Pemimpin Komunitas
 
-- **Present at your local meetup.** Whether it's giving a talk or running a workshop, you can bring a lot of value to your community by helping both new and experienced Vue developers continue to grow.
-- **Start your own meetup.** If there's not already a Vue meetup in your area, you can start your own! Use the [resources at vuemeetups.org](https://www.vuemeetups.org/resources/#introduction) to help you succeed!
-- **Help meetup organizers.** There can never be too much help when it comes to running an event, so offer a hand to help out local organizers to help make every event a success.
+Ada banyak cara untuk membuat Vue berkembang di komunitas kalian:
 
-If you have any questions on how you can get more involved with your local Vue community, reach out at [hello@vuemeetups.org](mailto:hello@vuemeetups.org) or [@VueMeetups](https://www.twitter.com/vuemeetups)!
+- **Jadi pembicara di meetup lokal.** Entah sekedar memberikan presentasi, atau mengadakan workshop; kalian bisa memberikan banyak nilai ke komunitas kalian dengan membantu developer baru atau yang sudah berpengalaman untuk terus berkembang.
+- **Buat meetup kalian sendiri.** Jika belum ada meetup Vue di sekitar kalian, kalian bisa membuatnya sendiri! Gunakan [sumber daya di vuemeetups.org](https://www.vuemeetups.org/resources/#introduction) untuk membantu kalian!
+- **Bantu meetup organizer lainnya.** Kalian juga bisa membantu mengorganisir acara meetup yang sudah ada. Jadi tawarkan bantuan kalian ke komunitas yang sudah ada di sekitar kalian!
+
+Jika kalian mempunyai pertanyaan tentang bagaimana caranya untuk bisa terlibat lebih jauh dengan komunitas lokal Vue kalian, hubungi [hello@vuemeetups.org](mailto:hello@vuemeetups.org) atau [@VueMeetups](https://www.twitter.com/vuemeetups)!

@@ -50,7 +50,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Migrasi dari Vue Router 0.7.x / Migrating from Vue Router 0.7.x
 - [ ] Migrasi dari Vuex 0.6.x ke 1.0 / Migrating from Vux 0.6.x to 1.0
 - [ ] Perbandingan dengan Framework Lainnya / Comparison with Other Frameworks
-- [ ] Gabung dengan Komunitasi Vue.js / Join the Vue.js Community!
+- [x] Gabung dengan Komunitasi Vue.js / Join the Vue.js Community!
 - [ ] Berkenalan dengan Tim / Meet the Team
 
 Jika kalian ingin berkontribusi, pilih dari salah satu halaman di atas dan buat isu GitHub dengan format:

@@ -34,7 +34,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Direktif Kustom / Custom Directives
 - [ ] Fungsi Render & JSX / Render Functions and JSX
 
-- [ ] Plugins / Plugins
+- [x] Plugin / Plugins
 - [ ] Filter / Filters
 - [ ] Komponen Satu Berkas (KSB) / Single File Components (SFC)
 - [ ] Unit Testing / Unit Testing

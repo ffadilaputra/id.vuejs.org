@@ -42,7 +42,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Peluncuran Produksi / Production Deployment
 
 - [ ] Routing / Routing
-- [ ] Manajemen State / State Management
+- [x] Manajemen State / State Management
 - [x] Rendering di Sisi Server / Server Side Rendering
 - [ ] Lebih Dalam Tentang Reaktifitas / Reactivity in Depth
 

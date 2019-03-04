@@ -39,7 +39,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Komponen Satu Berkas (KSB) / Single File Components (SFC)
 - [ ] Unit Testing / Unit Testing
 - [ ] Dukungan TypeScript / TypeScript Support
-- [ x Peluncuran Produksi / Production Deployment
+- [x] Peluncuran Produksi / Production Deployment
 
 - [ ] Routing / Routing
 - [x] Manajemen State / State Management

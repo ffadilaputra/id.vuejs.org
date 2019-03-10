@@ -35,7 +35,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Fungsi Render & JSX / Render Functions and JSX
 
 - [x] Plugin / Plugins
-- [ ] Filter / Filters
+- [x] Filter / Filters
 - [ ] Komponen Satu Berkas (KSB) / Single File Components (SFC)
 - [ ] Unit Testing / Unit Testing
 - [ ] Dukungan TypeScript / TypeScript Support

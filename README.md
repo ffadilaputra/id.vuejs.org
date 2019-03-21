@@ -30,7 +30,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Transisi Masuk dan Keluar / Enter and Leave Transitions
 - [ ] Transisi State / State's Transitions
 
-- [ ] Mixins / Mixins 
+- [x] Mixins / Mixins 
 - [ ] Direktif Kustom / Custom Directives
 - [ ] Fungsi Render & JSX / Render Functions and JSX
 

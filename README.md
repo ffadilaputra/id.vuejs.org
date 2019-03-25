@@ -30,14 +30,14 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Transisi Masuk dan Keluar / Enter and Leave Transitions
 - [ ] Transisi State / State's Transitions
 
-- [ ] Mixins / Mixins 
-- [ ] Direktif Kustom / Custom Directives
+- [x] Mixins / Mixins 
+- [x] Direktif Kustom / Custom Directives
 - [ ] Fungsi Render & JSX / Render Functions and JSX
 
 - [x] Plugin / Plugins
 - [x] Filter / Filters
 - [ ] Komponen Satu Berkas (KSB) / Single File Components (SFC)
-- [ ] Unit Testing / Unit Testing
+- [x] Unit Testing / Unit Testing
 - [ ] Dukungan TypeScript / TypeScript Support
 - [x] Peluncuran Produksi / Production Deployment
 

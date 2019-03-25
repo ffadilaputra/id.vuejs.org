@@ -12,7 +12,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [x] Pengenalan / Introduction
 - [x] Instan Vue / The Vue Instance
 - [ ] Sintaks Templat / Template Syntax
-- [ ] Properti Terkomputasi dan _Watchers_ / Computed Properties and Watchers
+- [x] Properti Terkomputasi dan Pengamat (_Watcher_) / Computed Properties and Watchers
 - [ ] Kelas dan _Style Bindings_ / Class and Style Bindings
 - [x] Rendering Kondisional / Conditional Rendering
 - [ ] Rendering Daftar / List Rendering

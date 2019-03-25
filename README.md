@@ -14,7 +14,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Sintaks Templat / Template Syntax
 - [ ] Properti Terkomputasi dan _Watchers_ / Computed Properties and Watchers
 - [ ] Kelas dan _Style Bindings_ / Class and Style Bindings
-- [ ] Rendering Kondisional / Conditional Rendering
+- [x] Rendering Kondisional / Conditional Rendering
 - [ ] Rendering Daftar / List Rendering
 - [ ] Penanganan _Event_ / Event Handling
 - [ ] _Binding_ Masukan Formulir / Form Input Bindings

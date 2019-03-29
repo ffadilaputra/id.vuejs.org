@@ -32,7 +32,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 
 - [x] Mixins / Mixins 
 - [x] Direktif Kustom / Custom Directives
-- [ ] Fungsi Render & JSX / Render Functions and JSX
+- [x] Fungsi Render & JSX / Render Functions and JSX
 
 - [x] Plugin / Plugins
 - [x] Filter / Filters

@@ -18,7 +18,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [ ] Rendering Daftar / List Rendering
 - [ ] Penanganan _Event_ / Event Handling
 - [ ] _Binding_ Masukan Formulir / Form Input Bindings
-- [ ] Dasar-dasar Komponen / Component Basics
+- [x] Dasar-dasar Komponen / Component Basics
 
 - [ ] Pendaftaran Komponen / Component Registration
 - [ ] Props / Props

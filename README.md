@@ -15,7 +15,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [x] Properti Terkomputasi dan Pengamat (_Watcher_) / Computed Properties and Watchers
 - [x] Kelas dan _Style Bindings_ / Class and Style Bindings
 - [x] Rendering Kondisional / Conditional Rendering
-- [ ] Rendering Daftar / List Rendering
+- [x] Rendering Daftar / List Rendering
 - [ ] Penanganan _Event_ / Event Handling
 - [ ] _Binding_ Masukan Formulir / Form Input Bindings
 - [x] Dasar-dasar Komponen / Component Basics

@@ -1,12 +1,12 @@
 ---
-title: List Rendering
+title: Me-render Daftar
 type: guide
 order: 8
 ---
 
-## Mapping an Array to Elements with `v-for`
+## Memetakan sebuah Array ke Elemen dengan `v-for`
 
-We can use the `v-for` directive to render a list of items based on an array. The `v-for` directive requires a special syntax in the form of `item in items`, where `items` is the source data array and `item` is an **alias** for the array element being iterated on:
+Kita dapat menggunakan direksi `v-for` untuk me-render sebuah daftar _item_ berdasakan dari sebuah array. Direksi `v-for` membutuhkan sebuah sintaks spesial dalam bentuk `item in items`, dimana `items` adalah sumber data array dan `item` adalah **alias** untuk elemen array yang diperulangkan:
 
 ``` html
 <ul id="example-1">
@@ -54,7 +54,7 @@ var example1 = new Vue({
 </script>
 {% endraw %}
 
-Inside `v-for` blocks we have full access to parent scope properties. `v-for` also supports an optional second argument for the index of the current item.
+Didalam blok `v-for` kita memiliki akses penuh kepada cangkupan properti _parent_. `v-for` juga mendukung sebuah argumen opsional kedua untuk index dari item saat ini.
 
 ``` html
 <ul id="example-2">
@@ -104,15 +104,15 @@ var example2 = new Vue({
 </script>
 {% endraw %}
 
-You can also use `of` as the delimiter instead of `in`, so that it is closer to JavaScript's syntax for iterators:
+Kalian juga bisa menggunakan `of` sebagai pembatass sebagai pengganti `in`, supaya lebih mirip dengan sintaks dari JavaScript untuk perulangan:
 
 ``` html
 <div v-for="item of items"></div>
 ```
 
-## `v-for` with an Object
+## `v-for` dengan sebuah Objek
 
-You can also use `v-for` to iterate through the properties of an object.
+Kalian juga bisa menggunakan `v-for` untuk melakukan perulangan melalui properti dari sebuah objek.
 
 ``` html
 <ul id="v-for-object" class="demo">
@@ -157,7 +157,7 @@ new Vue({
 </script>
 {% endraw %}
 
-You can also provide a second argument for the key:
+Kalian juga dapat menyediakan sebuah argumen ke dua sebagai kunci:
 
 ``` html
 <div v-for="(value, key) in object">
@@ -185,7 +185,7 @@ new Vue({
 </script>
 {% endraw %}
 
-And another for the index:
+Dan argumen lain sebagai index:
 
 ``` html
 <div v-for="(value, key, index) in object">
@@ -213,15 +213,15 @@ new Vue({
 </script>
 {% endraw %}
 
-<p class="tip">When iterating over an object, the order is based on the key enumeration order of `Object.keys()`, which is **not** guaranteed to be consistent across JavaScript engine implementations.</p>
+<p class="tip">Ketika melakukan perulangan pada sebuah objek, urutannya berdasarkan pada urutan penomoran kunci dari `Object.keys()`, yang mana **tidak** digaransi untuk dapat konsisten pada sebagian besar implementasi mesin JavaScript.</p>
 
 ## `key`
 
-When Vue is updating a list of elements rendered with `v-for`, by default it uses an "in-place patch" strategy. If the order of the data items has changed, instead of moving the DOM elements to match the order of the items, Vue will patch each element in-place and make sure it reflects what should be rendered at that particular index. This is similar to the behavior of `track-by="$index"` in Vue 1.x.
+Ketika Vue memperbarui sebuah daftar elemen yang di-render dengan `v-for`, secara standar menggunakan sebuah strategi "_patch_ di-tempat". Jika urutan datanya berubah, dibanding memindahkan elemen DOM untuk mencocokkan urutan dari item tersebut, Vue akan melakukan patch ke setiap element di-tempat dan memastikan untuk menampilkan apa yang seharusnya di-render pada index tertentu tersebut. Hal ini mirip dengan kelakuan dari `track-by="$index"` pada Vue 1.x.
 
-This default mode is efficient, but only suitable **when your list render output does not rely on child component state or temporary DOM state (e.g. form input values)**.
+Mode standar ini efisian, tetapi hanya cocok **ketika render output daftar kalian tidak bergantung pada komponen _state_ _child_ atau state DOM sementara (contohnya nilai input formulir)**.
 
-To give Vue a hint so that it can track each node's identity, and thus reuse and reorder existing elements, you need to provide a unique `key` attribute for each item. An ideal value for `key` would be the unique id of each item. This special attribute is a rough equivalent to `track-by` in 1.x, but it works like an attribute, so you need to use `v-bind` to bind it to dynamic values (using shorthand here):
+Untuk memberikan Vue sebuah petunjuk agar dapat melacak setiap identitas node, yang kemudian menggunakan ulang dan mengurutkan kembali element yang sudah ada, kalian harus menyediakan sebuah attribut `key` yang unik untuk setiap item. Sebuah nilai ideal untuk `key` akan menjadi id unik untuk setiap item. Attribut spesial ini kurang lebih sama dengan `track-by` pada 1.x, tetapi bekerja seperti attribut, jadi kalian harus menggunakan `v-bind` untuk mengikatnya agar nilainya dinamis (disini menggunakan shorthand):
 
 ``` html
 <div v-for="item in items" :key="item.id">
@@ -229,17 +229,17 @@ To give Vue a hint so that it can track each node's identity, and thus reuse and
 </div>
 ```
 
-It is recommended to provide a `key` with `v-for` whenever possible, unless the iterated DOM content is simple, or you are intentionally relying on the default behavior for performance gains.
+Direkomendasikan untuk menyediakan sebuah `key` bersama dengan `v-for` kapanpun, kecuali konten DOM yang diperulangkan sederhana, atau kalian sengaja mengandalkan perbuatan standar untuk meningkatkan performa.
 
-Since it's a generic mechanism for Vue to identify nodes, the `key` also has other uses that are not specifically tied to `v-for`, as we will see later in the guide.
+Karena mengidentifikasi node adalah mekanisme umum untuk Vue, `key` tersebut juga memiliki kegunaan lain yang tidak dibuat khusus untuk `v-for`, yang akan kita lihat di panduan nanti.
 
-<p class="tip">Don't use non-primitive values like objects and arrays as `v-for` keys. Use string or numeric values instead.</p>
+<p class="tip">Jangan menggunakan nilai _non-primitive_ seperti objek dan array untuk kunci `v-for`. Gunakan _string_ atau nilai angka saja.</p>
 
-## Array Change Detection
+## Pendeteksian Perubahan Array
 
-### Mutation Methods
+### Metode Mutasi
 
-Vue wraps an observed array's mutation methods so they will also trigger view updates. The wrapped methods are:
+Vue membukus metode mutasi dari array yang diamati agar mereka akan dapat memicu pembaruan tampilan. Metode yang dibungkus adalah:
 
 - `push()`
 - `pop()`
@@ -249,11 +249,11 @@ Vue wraps an observed array's mutation methods so they will also trigger view up
 - `sort()`
 - `reverse()`
 
-You can open the console and play with the previous examples' `items` array by calling their mutation methods. For example: `example1.items.push({ message: 'Baz' })`.
+Kalian bisa membuka _console_ dan bermain dengan contoh array `items` sebelumnya dengan memanggil metode mutasi mereka. Contohnya: `example1.items.push({ message: 'Baz' })`.
 
-### Replacing an Array
+### Menggantikan sebuah Array
 
-Mutation methods, as the name suggests, mutate the original array they are called on. In comparison, there are also non-mutating methods, e.g. `filter()`, `concat()` and `slice()`, which do not mutate the original array but **always return a new array**. When working with non-mutating methods, you can replace the old array with the new one:
+Metode mutasi, seperti namanya, memutasi array asli dimana mereka dipanggil. Sebagai perbandingan, ada juga metode non-mutasi, contohnya `filter()`, `concat()` dan `slice()`, dimana tidak memutasi array asli tetapi **selalu mengembalikan sebuah array baru**. Ketika bekerja dengan metode non-mutasi, kalian dapat mengganti array lama dengan array yang baru:
 
 ``` js
 example1.items = example1.items.filter(function (item) {
@@ -261,16 +261,16 @@ example1.items = example1.items.filter(function (item) {
 })
 ```
 
-You might think this will cause Vue to throw away the existing DOM and re-render the entire list - luckily, that is not the case. Vue implements some smart heuristics to maximize DOM element reuse, so replacing an array with another array containing overlapping objects is a very efficient operation.
+Kalian mungkin pikir hal ini akan menyebabkan Vue untuk membuang DOM yang sudah ada dan melakukan render lagi ke semua daftar - beruntungnya, bukan itu yang terjadi. Vue mengimplementasi beberapa herustis pintar untuk memaksimalkan penggunaan kembali elemen DOM, jadi operasi mengganti sebuah array dengan array lain yang berisikan objek tumpang tindih sangat efisien.
 
-### Caveats
+### Kekurangan
 
-Due to limitations in JavaScript, Vue **cannot** detect the following changes to an array:
+Karena batasan-batasan pada JavaScript, Vue **tidak bisa** mendeteksi perubahan pada array berikut:
 
-1. When you directly set an item with the index, e.g. `vm.items[indexOfItem] = newValue`
-2. When you modify the length of the array, e.g. `vm.items.length = newLength`
+1. Ketika kalian menentukan sebuah item dengan index, contohnya `vm.items[indexOfItem] = newValue`
+2. Ketika kalian memodifikasi panjangnya sebuah array, contohnya `vm.items.length = newLength`
 
-For example:
+Sebagai contoh:
 
 ``` js
 var vm = new Vue({
@@ -278,11 +278,11 @@ var vm = new Vue({
     items: ['a', 'b', 'c']
   }
 })
-vm.items[1] = 'x' // is NOT reactive
-vm.items.length = 2 // is NOT reactive
+vm.items[1] = 'x' // TIDAK bersifat reaktif
+vm.items.length = 2 // TIDAK bersifat reaktif
 ```
 
-To overcome caveat 1, both of the following will accomplish the same as `vm.items[indexOfItem] = newValue`, but will also trigger state updates in the reactivity system:
+Untuk mengatasi kekurangan 1, kedua kode berikut akan melakukan hal yang sama seperti `vm.items[indexOfItem] = newValue`, tetapi juga akan memicu perubahan status pada sistem reaktifitas:
 
 ``` js
 // Vue.set
@@ -293,21 +293,21 @@ Vue.set(vm.items, indexOfItem, newValue)
 vm.items.splice(indexOfItem, 1, newValue)
 ```
 
-You can also use the [`vm.$set`](https://vuejs.org/v2/api/#vm-set) instance method, which is an alias for the global `Vue.set`:
+Kalian juga bisa menggunakan metode instansi [`vm.$set`](https://vuejs.org/v2/api/#vm-set), yang mana adalah alias untuk `Vue.set` global:
 
 ``` js
 vm.$set(vm.items, indexOfItem, newValue)
 ```
 
-To deal with caveat 2, you can use `splice`:
+Untuk mengatasi kekurangan 2, kalian bisa menggunakan `splice`:
 
 ``` js
 vm.items.splice(newLength)
 ```
 
-## Object Change Detection Caveats
+## Kekurangan Pendeteksi perubahan objek
 
-Again due to limitations of modern JavaScript, **Vue cannot detect property addition or deletion**. For example:
+Karena batasan dari modern JavaScript lagi, **vue tidak bisa mendeteksi penambahan atau pengurangan properti**. Contohnya:
 
 ``` js
 var vm = new Vue({
@@ -315,13 +315,13 @@ var vm = new Vue({
     a: 1
   }
 })
-// `vm.a` is now reactive
+// `vm.a` sekarang bersifat reactive
 
 vm.b = 2
-// `vm.b` is NOT reactive
+// `vm.b` tidak bersifat reactive
 ```
 
-Vue does not allow dynamically adding new root-level reactive properties to an already created instance. However, it's possible to add reactive properties to a nested object using the `Vue.set(object, key, value)` method. For example, given:
+Vue tidak memperbolehkan menambahkan level-dasar properti reaktif secara dinamis ke instansi yang sudah dibuat. Tetapi, bisa untuk menambahkan properti reaktif ke objek terbungkus menggunakan metode `Vue.set(object, key, value)`. Sebagai contoh:
 
 ``` js
 var vm = new Vue({
@@ -333,19 +333,19 @@ var vm = new Vue({
 })
 ```
 
-You could add a new `age` property to the nested `userProfile` object with:
+Kalian bisa menambahkan sebuah properti `age` baru ke objek yang dibungkus `userProfile` dengan:
 
 ``` js
 Vue.set(vm.userProfile, 'age', 27)
 ```
 
-You can also use the `vm.$set` instance method, which is an alias for the global `Vue.set`:
+Kalian juga bisa menggunakan metode instansi `vm.$set` , dimana sebagai alias untuk `Vue.set` yang global:
 
 ``` js
 vm.$set(vm.userProfile, 'age', 27)
 ```
 
-Sometimes you may want to assign a number of new properties to an existing object, for example using `Object.assign()` or `_.extend()`. In such cases, you should create a fresh object with properties from both objects. So instead of:
+Terkadang kalian juga ingin menentukan angka sebagai properti baru ke objek yang sudah ada, contohnya menggunakan `Object.assign()` atau `_.extend()`. Di kasus seperti ini, kalian harus membuat sebuah objek baru dengan properti dari kedua objek. Jadi daripada membuat:
 
 ``` js
 Object.assign(vm.userProfile, {
@@ -354,7 +354,7 @@ Object.assign(vm.userProfile, {
 })
 ```
 
-You would add new, reactive properties with:
+Kalian ingin menambahkan properti properti baru, dengan:
 
 ``` js
 vm.userProfile = Object.assign({}, vm.userProfile, {
@@ -363,11 +363,11 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
 })
 ```
 
-## Displaying Filtered/Sorted Results
+## Menampilkan Hasil Penyaringan/Penyortiran
 
-Sometimes we want to display a filtered or sorted version of an array without actually mutating or resetting the original data. In this case, you can create a computed property that returns the filtered or sorted array.
+Terkadang kita ingin menampilkan versi array yang disaring atau disortir tanpa mengubah atau mengulang data yang asli. Pada kasus ini, kalian dapat membuat sebuah properti perhitungan yang mengembalikan array yang sudah di filter atau sortir.
 
-For example:
+Sebagai contoh:
 
 ``` html
 <li v-for="n in evenNumbers">{{ n }}</li>
@@ -386,7 +386,7 @@ computed: {
 }
 ```
 
-In situations where computed properties are not feasible (e.g. inside nested `v-for` loops), you can use a method:
+Pada situasi dimana properti yang dihitung tidak bisa diakses (contohnya didalam perulangan `v-for`), kalian bisa menggunakan:
 
 ``` html
 <li v-for="n in even(numbers)">{{ n }}</li>
@@ -405,9 +405,9 @@ methods: {
 }
 ```
 
-## `v-for` with a Range
+## `v-for` dengan Batas
 
-`v-for` can also take an integer. In this case it will repeat the template that many times.
+`v-for` jusa bisa menggunakan sebuah _integer_. Pada kasus ini perulangan akan melakukan perulangan pada _template_ sebanyak angka tersebut.
 
 ``` html
 <div>
@@ -415,7 +415,7 @@ methods: {
 </div>
 ```
 
-Result:
+Hasil:
 
 {% raw %}
 <div id="range" class="demo">
@@ -426,9 +426,9 @@ Result:
 </script>
 {% endraw %}
 
-## `v-for` on a `<template>`
+## `v-for` pada `<template>`
 
-Similar to template `v-if`, you can also use a `<template>` tag with `v-for` to render a block of multiple elements. For example:
+Mirip dengan template `v-if`, kalian juga bisa menggunakan tag `<template>` dengan `v-for` untuk me-render beberapa blok elemen. Contohnya:
 
 ``` html
 <ul>
@@ -438,12 +438,11 @@ Similar to template `v-if`, you can also use a `<template>` tag with `v-for` to 
   </template>
 </ul>
 ```
+## `v-for` dengan `v-if`
 
-## `v-for` with `v-if`
+<p class="tip">Catatan bahwa **tidak** direkomendasikan untuk menggunakan `v-if` dan `v-for` bersamaan. Berdasar pada [panduan style](/v2/style-guide/#Avoid-v-if-with-v-for-essential) untuk detail.</p>
 
-<p class="tip">Note that it's **not** recommended to use `v-if` and `v-for` together. Refer to [style guide](/v2/style-guide/#Avoid-v-if-with-v-for-essential) for details.</p>
-
-When they exist on the same node, `v-for` has a higher priority than `v-if`. That means the `v-if` will be run on each iteration of the loop separately. This can be useful when you want to render nodes for only _some_ items, like below:
+Ketika mereka ada pada node yang sama, `v-for` memiliki prioritas lebih tinggi dibandingkan `v-if`. Yang berarti `v-if` akan dijalankan pada setiap perulangan secara terpisah. Hal ini bisa berguna ketika kalian ingin me-render node untuk _sejumlah_ item, seperti dibawah ini:
 
 ``` html
 <li v-for="todo in todos" v-if="!todo.isComplete">
@@ -451,9 +450,9 @@ When they exist on the same node, `v-for` has a higher priority than `v-if`. Tha
 </li>
 ```
 
-The above only renders the todos that are not complete.
+Diatas tadi hanya me-render _todo_ yang tidak selesai.
 
-If instead, your intent is to conditionally skip execution of the loop, you can place the `v-if` on a wrapper element (or [`<template>`](conditional.html#Conditional-Groups-with-v-if-on-lt-template-gt)). For example:
+Tetapi jika, yang kalian inginkan untuk melewatkan eksekusi perulangan, kalian bisa menempatkan `v-if` pada elemen pembungkus (atau [`<template>`](conditional.html#Conditional-Groups-with-v-if-on-lt-template-gt)). Sebagai contoh:
 
 ``` html
 <ul v-if="todos.length">
@@ -464,19 +463,19 @@ If instead, your intent is to conditionally skip execution of the loop, you can 
 <p v-else>No todos left!</p>
 ```
 
-## `v-for` with a Component
+## `v-for` dengan sebuah Komponen
 
-> This section assumes knowledge of [Components](components.html). Feel free to skip it and come back later.
+> Bagian ini mengasumsikan pengetahuan tentang [Komponen](components.html). Jangan ragu untuk melewatkannya dan kembali lain kali.
 
-You can directly use `v-for` on a custom component, like any normal element:
+Kalian bisa menggunakan `v-for` pada komponen kustom, seperti elemen normal lainnya:
 
 ``` html
 <my-component v-for="item in items" :key="item.id"></my-component>
 ```
 
-> In 2.2.0+, when using `v-for` with a component, a [`key`](list.html#key) is now required.
+> Pada 2.2.0+, ketika menggunakan `v-for` dengan sebuah komponen, sebuah [`key`](list.html#key) sekarang dibutuhkan.
 
-However, this won't automatically pass any data to the component, because components have isolated scopes of their own. In order to pass the iterated data into the component, we should also use props:
+Tetapi, hal ini tidak akan otomatis mengoper data ke komponen, karena komponen memiliki lingkup yang terbatas pada mereka sendiri. Agar mengoper data perulangan ke komponen, kita juga harus menggunakan _props_:
 
 ``` html
 <my-component
@@ -487,9 +486,9 @@ However, this won't automatically pass any data to the component, because compon
 ></my-component>
 ```
 
-The reason for not automatically injecting `item` into the component is because that makes the component tightly coupled to how `v-for` works. Being explicit about where its data comes from makes the component reusable in other situations.
+Alasannya tidak otomatis memasukkan `item` ke komponen adalah karena hal itu membuat komponen tergabung erat dengan bagimana `v-for` bekerja. Menjadi eksplisit tentang dimana data datang membuat komponen tersebut dapat digunakan lagi pada situasi lain.
 
-Here's a complete example of a simple todo list:
+Berikut sebuah contoh lengkap daftar todo sederhana:
 
 ``` html
 <div id="todo-list-example">
@@ -514,7 +513,7 @@ Here's a complete example of a simple todo list:
 </div>
 ```
 
-<p class="tip">Note the `is="todo-item"` attribute. This is necessary in DOM templates, because only an `<li>` element is valid inside a `<ul>`. It does the same thing as `<todo-item>`, but works around a potential browser parsing error. See [DOM Template Parsing Caveats](components.html#DOM-Template-Parsing-Caveats) to learn more.</p>
+<p class="tip">Perhatikan attribut `is="todo-item"`. Hal ini sangat dibutuhkan untuk template DOM, karena hanya sebuah elemen `<li>` yang valid didalam sebuah `<ul>`. Hal tersebut berlaku sama dengan `<todo-item>`, tetapi sudah mengatasi browser error _parsing_ yang berpotensi. Lihat [Kekurangan Parsing Template DOM](components.html#DOM-Template-Parsing-Caveats) untuk mempelajari lebih lanjut.</p>
 
 ``` js
 Vue.component('todo-item', {

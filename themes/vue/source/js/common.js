@@ -20,6 +20,9 @@
   // moved to a perhaps differently-named section on
   // another page, we need this.
   function initHashLevelRedirects() {
+    checkForHashRedirect(/list\.html$/, {
+      key: '/v2/guide/list.html#Maintaining-State'
+    })
     checkForHashRedirect(/components\.html$/, {
       'What-are-Components': '/v2/guide/components.html',
       'Using-Components': '/v2/guide/components-registration.html',
@@ -154,6 +157,12 @@
     var hashTarget = document.getElementById(hash)
     if (!hashTarget) {
       var normalizedHash = normalizeHash(hash)
+      var edgeCases = {
+        'vue-set-target-key-value': 'vue-set'
+      }
+      if (edgeCases.hasOwnProperty(normalizedHash)) {
+        normalizedHash = edgeCases[normalizedHash];
+      }
       var possibleHashes = [].slice.call(document.querySelectorAll('[id]'))
         .map(function (el) { return el.id })
       possibleHashes.sort(function (hashA, hashB) {

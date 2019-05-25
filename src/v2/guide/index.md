@@ -16,6 +16,9 @@ Jika kalian adalah seorang frontend developer berpengalaman dan ingin tau bagaim
 
 ## Mulai
 
+<a class="button" href="installation.html">Pemasangan</a>
+
+
 <p class="tip">Panduan resmi ini dibuat dengan asumsi bahwa Anda mempunyai pengetahuan dasar tentang HML, CSS, Javascript. Jika kalian benar-benar baru di dunia frontend, mungkin bukan ide yang bagus untuk langsung terjun ke framework sebagai langkah awal. Silahkan pahami dasar itu dahulu! Berpengalaman dengan framework lain mungkin cukup membantu, namun tidak diharuskan.</p>
 
 Cara paling mudah untuk mencoba Vue.js adalah melalui [contoh di JSFiddle Hello World](https://jsfiddle.net/chrisvfritz/50wL7mdz/). Kalian bebas untuk membukanya di tab lainnya dan mengikuti apa yang kami contohkan di contoh dasar. Atau kalian bisa <a href="https://gist.githubusercontent.com/chrisvfritz/7f8d7d63000b48493c336e48b3db3e52/raw/ed60c4e5d5c6fec48b0921edaed0cb60be30e87c/index.html" target="_blank" download="index.html" rel="noopener noreferrer">membuat sebuah <code>index.html</code> berkas</a> dan memasukkan Vue dengan:

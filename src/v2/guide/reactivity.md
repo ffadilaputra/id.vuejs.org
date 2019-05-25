@@ -36,7 +36,7 @@ vm.b = 2
 // `vm.b` tidak reaktif
 ```
 
-Vue does not allow dynamically adding new root-level reactive properties to an already created instance. However, it's possible to add reactive properties to a nested object using the `Vue.set(object, key, value)` method:
+Vue does not allow dynamically adding new root-level reactive properties to an already created instance. However, it's possible to add reactive properties to a nested object using the `Vue.set(object, propertyName, value)` method:
 
 Vua tidak membolehkan penambahan properti reaktif di tingkat root secara dinamis di instan yang sudah dibuat. Tetapi, kalian bisa menggunakan `Vue.set(object, key, value)` untuk menambahkan properti baru.
 
@@ -85,7 +85,7 @@ Ada beberapa alasan teknis dibalik keterbatasan ini - tidak perlu adanya pengecu
 
 ## Antrian Pembaharuan Asinkronus
 
-Vue melakukan pembaharuan DOM secara **asinkronus**. Setiap ada perubahan data, maka perubahan tersebut akan dimasukkan ke dalam antrian yang terjadi di dalam event loop yang sama. Jika sebuah watcher dipanggil beberapa kali, dia hanya akan dimasukan ke dalam antrian satu kali saja. Ini penting supaya tidak ada kalkulasi yang duplikat yang seharusnya tidak perlu dipanggil. Di "tick" event loop selanjutnya, Vue akan memproses queue yang ada. Secara internal, Vue menggunakan `Promise.then` dan `MessageChanel` untuk antrian asinkronus ini, dan menggunakan `setTimeout(fn, 0)` jika keduanya tidak tersedia.
+Vue melakukan pembaharuan DOM secara **asinkronus**. Setiap ada perubahan data, maka perubahan tersebut akan dimasukkan ke dalam antrian yang terjadi di dalam event loop yang sama. Jika sebuah watcher dipanggil beberapa kali, dia hanya akan dimasukan ke dalam antrian satu kali saja. Ini penting supaya tidak ada kalkulasi yang duplikat yang seharusnya tidak perlu dipanggil. Di "tick" event loop selanjutnya, Vue akan memproses queue yang ada. Secara internal, Vue menggunakan `Promise.then`, `MutationObserver`, dan `setImmediate` untuk antrian asinkronus ini, dan menggunakan `setTimeout(fn, 0)` jika keduanya tidak tersedia.
 
 Contohnya, ketika kalian set `vm.someData = 'new value'`, komponen tidak akan langsung melakukan proses re-render. Rerender akan terjadi di "tick" selanjutnya, ketika antrian diproses. Biasanya, kalian tidak perlu terlalu memikirkan tentang proses ini. Tapi ini bermanfaat jika kalian ingin melakukan operasi yang tergantung dengan keadaan DOM yang terbaru. Meskipun Vue mendorong pengembang untuk mengemban konsep "data-driven" dan menghindari mengotak-atik DOM secara langsung. Jika kalian harus melakukannya, Vue menyediakan `Vue.nextTick(callback)` yang akan dipanggil setelah data diproses. Contohnya:
 

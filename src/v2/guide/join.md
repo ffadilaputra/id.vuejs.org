@@ -62,7 +62,7 @@ Jika iya, silahkan _fork_ repo untuk [dokumentasi resmi](https://github.com/vuej
 Ada banyak cara untuk membuat Vue berkembang di komunitas kalian:
 
 - **Jadi pembicara di meetup lokal.** Entah sekedar memberikan presentasi, atau mengadakan workshop; kalian bisa memberikan banyak nilai ke komunitas kalian dengan membantu developer baru atau yang sudah berpengalaman untuk terus berkembang.
-- **Buat meetup kalian sendiri.** Jika belum ada meetup Vue di sekitar kalian, kalian bisa membuatnya sendiri! Gunakan [sumber daya di vuemeetups.org](https://www.vuemeetups.org/resources/#introduction) untuk membantu kalian!
+- **Buat meetup kalian sendiri.** Jika belum ada meetup Vue di sekitar kalian, kalian bisa membuatnya sendiri! Gunakan [sumber daya di events.vuejs.org](https://events.vuejs.org/resources/#getting-started) untuk membantu kalian!
 - **Bantu meetup organizer lainnya.** Kalian juga bisa membantu mengorganisir acara meetup yang sudah ada. Jadi tawarkan bantuan kalian ke komunitas yang sudah ada di sekitar kalian!
 
-Jika kalian mempunyai pertanyaan tentang bagaimana caranya untuk bisa terlibat lebih jauh dengan komunitas lokal Vue kalian, hubungi [hello@vuemeetups.org](mailto:hello@vuemeetups.org) atau [@VueMeetups](https://www.twitter.com/vuemeetups)!
+Jika kalian mempunyai pertanyaan tentang bagaimana caranya untuk bisa terlibat lebih jauh dengan komunitas lokal Vue kalian, hubungi [@Vuejs_Events](https://www.twitter.com/vuejs_events)!

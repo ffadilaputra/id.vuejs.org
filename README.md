@@ -1,4 +1,4 @@
-# vuejs.org
+﻿# vuejs.org
 
 Situs ini dibuat menggunakan [hexo](http://hexo.io/). Isi situs ini ditulis dalam format Markdown dan ada di direktori `src`. 
 _Pull Request_ sangat diterima!
@@ -82,6 +82,16 @@ Terjemahan untuk dokumentasi ini dikembangkan dan dirawat di repository yang ber
 Terjamahan Bahasa Indonesia dirawat oleh adityapurwa.
 
 * Repo Terjemahan - [/adityapurwa/id.vuejs.org](https://github.com/adityapurwa/id.vuejs.org)
+Translations for this documentation project are currently maintained in separate repositories forked from this original one.
+
+### Arabic
+
+Arabic translation is maintained by [Interstellar Club](https://github.com/InterstellarClub)
+
+* Translation Repo - [/interstellarClub/ar.vuejs.org](https://github.com/interstellarClub/ar.vuejs.org)
+* Primary Maintainers :
+    * [Ilyes Chouia](https://github.com/celyes)
+    * [Ahmed Aissaoui](https://github.com/Aissaoui-Ahmed)
 
 ### Bahasa Perancis
 
@@ -102,6 +112,7 @@ Terjemahan Bahasa Jepang dirawat oleh [Vue.js japan user group](https://github.c
 * Perawat Lainnya:
     * [re-fort](https://github.com/re-fort)
     * [potato4d](https://github.com/potato4d)
+    * [oohira](https://github.com/oohira)
 
 ### Bahasa Korea
 
@@ -150,8 +161,7 @@ Terjemahan Bahasa Vietnam dirawat oleh [Vue.js Vietnam User group](https://githu
 
 ### Ingin membantu proses penerjemahan?
 
-Jika kalian merasa sanggup untuk menerjemahkan sendirian, salin repo ini dan buat issue "work-in-progress" untuk
-memberitahu yang lainnya kalau kalan sedang membuat terjemahan.
+Jika kalian merasa sanggup untuk menerjemahkan sendirian, salin repo ini dan buat komentar di [Community Translation Announcements](https://github.com/vuejs/vuejs.org/issues/2015) untuk memberitahu yang lainnya kalau kalan sedang membuat terjemahan.
 
 Jika kalian lebih suka bekerja secara tim, Translation Gang mungkin cocok bagi kalian. Beri tahu kami kalau kalian
 siap bergabung dengan komunitas penerjemah sumber terbuka internasional.

@@ -44,7 +44,7 @@ Repositori ini sedang dalam proses penerjemahan, berikut perkembangan terkini da
 - [x] Routing / Routing
 - [x] Manajemen State / State Management
 - [x] Rendering di Sisi Server / Server Side Rendering
-- [ ] Lebih Dalam Tentang Reaktifitas / Reactivity in Depth
+- [x] Lebih Dalam Tentang Reaktifitas / Reactivity in Depth
 
 - [ ] Migrasi dari Vue 1.x / Migrating from Vue 1.x
 - [ ] Migrasi dari Vue Router 0.7.x / Migrating from Vue Router 0.7.x

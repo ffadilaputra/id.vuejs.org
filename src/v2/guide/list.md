@@ -44,11 +44,6 @@ var example1 = new Vue({
       { message: 'Foo' },
       { message: 'Bar' }
     ]
-  },
-  watch: {
-    items: function () {
-      smoothScroll.animateScroll(document.querySelector('#example-1'))
-    }
   }
 })
 </script>
@@ -94,11 +89,6 @@ var example2 = new Vue({
       { message: 'Foo' },
       { message: 'Bar' }
     ]
-  },
-  watch: {
-    items: function () {
-      smoothScroll.animateScroll(document.querySelector('#example-2'))
-    }
   }
 })
 </script>
@@ -127,9 +117,9 @@ new Vue({
   el: '#v-for-object',
   data: {
     object: {
-      firstName: 'John',
-      lastName: 'Doe',
-      age: 30
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
     }
   }
 })
@@ -148,9 +138,9 @@ new Vue({
   el: '#v-for-object',
   data: {
     object: {
-      firstName: 'John',
-      lastName: 'Doe',
-      age: 30
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
     }
   }
 })
@@ -160,25 +150,25 @@ new Vue({
 Kalian juga dapat menyediakan sebuah argumen ke dua sebagai kunci:
 
 ``` html
-<div v-for="(value, key) in object">
-  {{ key }}: {{ value }}
+<div v-for="(value, name) in object">
+  {{ name }}: {{ value }}
 </div>
 ```
 
 {% raw %}
-<div id="v-for-object-value-key" class="demo">
-  <div v-for="(value, key) in object">
-    {{ key }}: {{ value }}
+<div id="v-for-object-value-name" class="demo">
+  <div v-for="(value, name) in object">
+    {{ name }}: {{ value }}
   </div>
 </div>
 <script>
 new Vue({
-  el: '#v-for-object-value-key',
+  el: '#v-for-object-value-name',
   data: {
     object: {
-      firstName: 'John',
-      lastName: 'Doe',
-      age: 30
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
     }
   }
 })
@@ -188,25 +178,25 @@ new Vue({
 Dan argumen lain sebagai index:
 
 ``` html
-<div v-for="(value, key, index) in object">
-  {{ index }}. {{ key }}: {{ value }}
+<div v-for="(value, name, index) in object">
+  {{ index }}. {{ name }}: {{ value }}
 </div>
 ```
 
 {% raw %}
-<div id="v-for-object-value-key-index" class="demo">
-  <div v-for="(value, key, index) in object">
-    {{ index }}. {{ key }}: {{ value }}
+<div id="v-for-object-value-name-index" class="demo">
+  <div v-for="(value, name, index) in object">
+    {{ index }}. {{ name }}: {{ value }}
   </div>
 </div>
 <script>
 new Vue({
-  el: '#v-for-object-value-key-index',
+  el: '#v-for-object-value-name-index',
   data: {
     object: {
-      firstName: 'John',
-      lastName: 'Doe',
-      age: 30
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
     }
   }
 })
@@ -215,7 +205,7 @@ new Vue({
 
 <p class="tip">Ketika melakukan perulangan pada sebuah objek, urutannya berdasarkan pada urutan penomoran kunci dari `Object.keys()`, yang mana **tidak** digaransi untuk dapat konsisten pada sebagian besar implementasi mesin JavaScript.</p>
 
-## `key`
+## Maintaining State
 
 Ketika Vue memperbarui sebuah daftar elemen yang di-render dengan `v-for`, secara standar menggunakan sebuah strategi "_patch_ di-tempat". Jika urutan datanya berubah, dibanding memindahkan elemen DOM untuk mencocokkan urutan dari item tersebut, Vue akan melakukan patch ke setiap element di-tempat dan memastikan untuk menampilkan apa yang seharusnya di-render pada index tertentu tersebut. Hal ini mirip dengan kelakuan dari `track-by="$index"` pada Vue 1.x.
 
@@ -224,7 +214,7 @@ Mode standar ini efisian, tetapi hanya cocok **ketika render output daftar kalia
 Untuk memberikan Vue sebuah petunjuk agar dapat melacak setiap identitas node, yang kemudian menggunakan ulang dan mengurutkan kembali element yang sudah ada, kalian harus menyediakan sebuah attribut `key` yang unik untuk setiap item. Sebuah nilai ideal untuk `key` akan menjadi id unik untuk setiap item. Attribut spesial ini kurang lebih sama dengan `track-by` pada 1.x, tetapi bekerja seperti attribut, jadi kalian harus menggunakan `v-bind` untuk mengikatnya agar nilainya dinamis (disini menggunakan shorthand):
 
 ``` html
-<div v-for="item in items" :key="item.id">
+<div v-for="item in items" v-bind:key="item.id">
   <!-- content -->
 </div>
 ```

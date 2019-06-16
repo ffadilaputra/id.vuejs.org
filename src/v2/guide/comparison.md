@@ -146,7 +146,7 @@ Vue sangat sederhana dibanding AngularJS, keduanya pada aspek API dan desain. Pe
 
 AngularJS memiliki opini yang kuat tentang harus bagaimana aplikasi kalian terstruktur, sementara Vue lebih ke solusi flexibel, modular. Sementara hal ini membuat Vue lebih dapat diadaptasikan dengan berbagai macam proyek, kami juga mengenal bahwa memiliki beberapa pilihan yang ditentukan olehmu sesekali berguna, jadi kalian bisa memulai koding.
 
-Itulah mengapa kami menawarkan [template webpack](https://github.com/vuejs-templates/webpack) yang bisa membantu kalian menyiapkan dalam beberapa menit, sekaligus menunjang kalian untuk mengakses fitur lanjutan seperti pemuatan ulang modul dengat hangat, linting, mengekstrak CSS, dan masih banyak lagi
+Karena itu kita menawarkan [Vue CLI](https://github.com/vuejs/vue-cli) yang dibuat sebagai standar peralatan untuk mengembangkan Vue. Alat ini memastikan bahwa _build tool_ bekerja dengan lancar dengan konfigurasi awal yang masuk akal, sehingga kalian bisa fokus ke pembuatan aplikasi. Di sisi lain, alat ini juga menyediakan fleksibilitas untuk merubah konfigurasi jika dibutuhkan.
 
 ### Mengikat data
 

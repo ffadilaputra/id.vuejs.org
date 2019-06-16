@@ -189,4 +189,4 @@ Secara umum, `v-if` berat ketika terjadi peralihan kondisi, sedangkan `v-show` b
 
 <p class="tip">Penggunaan `v-if` dan `v-for` secara bersamaan **tidak direkomendasikan**. Lihat [panduan gaya](/v2/style-guide/#Avoid-v-if-with-v-for-essential) untuk informasi lebih lanjut.</p>
 
-Ketika digunakan secara bersamaan dengan `v-if`, `v-for` punya prioritas yang lebih tinggi dibandingkan `v-if`. Lihat <a href="../guide/list.html#V-for-and-v-if">panduan menampilkan daftar/_list_</a> untuk detailnya.
+Ketika digunakan secara bersamaan dengan `v-if`, `v-for` punya prioritas yang lebih tinggi dibandingkan `v-if`. Lihat <a href="../guide/list.html#v-for-and-v-if">panduan menampilkan daftar/_list_</a> untuk detailnya.

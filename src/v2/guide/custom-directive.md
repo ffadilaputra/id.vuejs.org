@@ -143,6 +143,37 @@ new Vue({
 </script>
 {% endraw %}
 
+Argumen direktif bisa dinamis, contohnya di `v-mydirective:argument=[dataproperty]`, `argument` adalah nilai string yang diberikan ke property *arg* di hook direktif *binding* parameter dan `dataproperty` adalah sebuah referensi ke properti data di komponen kalian yang mengarah ke properti *value* di parameter *binding* yang sama. Ketika hook direktif ini dipanggil, properti *value* dari parameter *binding* akan secara dinamis berubah berdasarkan nilai dari `dataproperty`.
+
+Contohnya:
+
+```html
+<div id="app">
+  <p>Scroll down the page</p>
+  <p v-tack:left="[dynamicleft]">I’ll now be offset from the left instead of the top</p>
+</div>
+```
+
+```js
+Vue.directive('tack', {
+  bind(el, binding, vnode) {
+    el.style.position = 'fixed';
+    const s = (binding.arg == 'left' ? 'left' : 'top');
+    el.style[s] = binding.value + 'px';
+  }
+})
+
+// start app
+new Vue({
+  el: '#app',
+  data() {
+    return {
+      dynamicleft: 500
+    }
+  }
+})
+```
+
 ## Fungsi Singkatan
 
 Di beberapa kasus, kalian mungkin ingin perilaku yang sama pada `bind` dan `update`, akan tetapi tidak peduli terhadap _hook_ lainnya. Sebagai contoh berikut:
